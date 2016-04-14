@@ -3,8 +3,8 @@
     "identifier": "com.pa.moldez.transicons",
     "display_name": "Transparent Strategic Icons",
     "description": "Transparent Strategic Icons",
-    "author": "Moldez",
-    "version": "5",
+    "author": "Moldez, Stuart98",
+    "version": "6",
     "signature": "not yet implemented",
     "priority": 100,
     "enabled": true,
@@ -14,6 +14,6 @@
     "category": [
         "Strategic Icons"
     ],
-    "date": "2015/06/16",
-    "build": "83074"
+    "date": "2016/04/13",
+    "build": "89755"
 }
