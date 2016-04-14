@@ -71,16 +71,12 @@ void main()
         }
         
         if (v_SelectedState > 0.9)
-            highlight = vec4(1.0,1.0,0.2,0.8);
-        else if (v_SelectedState > 0.5)
-            highlight = vec4(0.0,0.8,0.8,0.8);
-        else if (v_SelectedState > 0.1)
-            highlight = vec4(0.8,0.8,0.8,0.8);
+            highlight = vec4(1,1,1,1);
         else
-            highlight = vec4(0.0,0.0,0.0,0.0);
+            highlight = vec4(0.0,0.0,0.0,1);
 
                                               // if desired, this  vvv  can be changed to v_ColorSecondary
-        vec4 color = combo(texel.rgb, Black, White, v_ColorPrimary, Green, White,Yellow,White, White);
+        vec4 color = combo(texel.rgb, highlight, White, v_ColorPrimary, Green, White,Yellow,White, White);
         color.a = color.a * texel.a;
         // the above can be changed to, for instance,
         // color.a = color.a * texel.a * 0.85;
